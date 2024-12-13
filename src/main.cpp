@@ -29,8 +29,11 @@ int main(int argc, char *argv[]) {
       ballVelocity.y *= -1;
       ++bounceCount;
     }
-    ClearBackground(RAYWHITE);
+
     BeginDrawing();
+
+    ClearBackground(RAYWHITE);
+
     DrawCircleV(ballPos, radius, BLACK);
     DrawText(TextFormat("The ball has bounced %d times", bounceCount), 0, 0, 12,
              BLACK);
