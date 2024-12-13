@@ -32,8 +32,8 @@ int main(int argc, char *argv[]) {
     ClearBackground(RAYWHITE);
     BeginDrawing();
     DrawCircleV(center, radius, BLACK);
-    DrawText(TextFormat("The ball has bounce %d", bounceCount, " times"), 0, 0,
-             12, BLACK);
+    DrawText(TextFormat("The ball has bounce %d times", bounceCount), 0, 0, 12,
+             BLACK);
     EndDrawing();
   }
   return 0;
