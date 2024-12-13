@@ -6,6 +6,7 @@ int main(int argc, char *argv[]) {
   const int SCREEN_HEIGHT = 480;
 
   InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Bouncy Boi");
+
   Vector2 center = {(float)SCREEN_WIDTH / 2, (float)SCREEN_HEIGHT / 2};
   Vector2 ballVelocity = {200.0f, 150.0f};
 
@@ -31,8 +32,8 @@ int main(int argc, char *argv[]) {
     ClearBackground(RAYWHITE);
     BeginDrawing();
     DrawCircleV(center, radius, BLACK);
-    DrawText(TextFormat("The ball has bounce %d", bounceCount), 0, 0, 12,
-             BLACK);
+    DrawText(TextFormat("The ball has bounce %d", bounceCount, " times"), 0, 0,
+             12, BLACK);
     EndDrawing();
   }
   return 0;
